@@ -88,15 +88,30 @@ public class MainClass {
 		
 		// SimpleHashTableImpl
 		
-		SimpleHashTableImpl obj=new SimpleHashTableImpl();
-		Employee emp=new Employee(1,"SUmit",10000.0);
-		Employee emp1=new Employee(1,"Amit",10000.0);
-		Employee emp2=new Employee(1,"Rahul",10000.0);
-		obj.put(obj.hasCode(emp.getEname()), emp);
-		obj.put(obj.hasCode(emp1.getEname()), emp1);
-		obj.put(obj.hasCode(emp2.getEname()), emp2);
+//		SimpleHashTableImpl obj=new SimpleHashTableImpl();
+//		Employee emp=new Employee(1,"SUmit",10000.0);
+//		Employee emp1=new Employee(1,"Amit",10000.0);
+//		Employee emp2=new Employee(1,"Rahul",10000.0);
+//		obj.put(obj.hasCode(emp.getEname()), emp);
+//		obj.put(obj.hasCode(emp1.getEname()), emp1);
+//		obj.put(obj.hasCode(emp2.getEname()), emp2);
+//		
+//		obj.printHashTable();
 		
-		obj.printHashTable();
+		// BinarySearch 
+		
+//		BinarySearch obj=new BinarySearch();
+//		int arr[]= {10,30,40,50,90,160,200,250,260,300};
+//		System.out.println(obj.search(arr, 250));
+		
+		// BST
+		
+		BinarySearchTree bst=new BinarySearchTree();
+		for (int i=0;i<5;i++)
+		{
+			bst.insert(10*i);
+		}
+		
 		
 	}
 }

@@ -4,18 +4,22 @@ public class BinarySearch {
 
 	public boolean search(int arr[], int key)
 	{
-		int start=0,end=arr.length;
+		int start=0,end=arr.length-1;
 		boolean flag=false;
-		while(start<end)
+		while(start<=end)
 		{
 			int mid=(start+end)/2;
-			if(mid==key)
+			System.out.println(mid);
+			
+			//System.out.println(mid +" data "+arr[mid]);
+			if(arr[mid]==key)
 			{
 				flag=true;
+				break;
 			}
 			else
 			{
-				if(key<mid)
+				if(key<arr[mid])
 				{
 					end=mid-1;
 				}
