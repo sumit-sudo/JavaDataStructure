@@ -1,6 +1,5 @@
 package com.java.data.structure;
 
-import javax.swing.tree.TreeNode;
 
 public class BinarySearchTree {
 
@@ -50,6 +49,7 @@ public class BinarySearchTree {
 	public void inOrderTraverse(BinaryNode node)
 	{
 		//In order traverse will always produce a sorted array, ascending order
+		//
 		if(node==null)
 			return;
 		inOrderTraverse(node.getLeft());
